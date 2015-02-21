@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customer-info valid="true" id="234">
+	<company company-valid="true" company-id="987564">
+		<deptos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:type="java:java.lang.String">CONTABILIDAD</deptos>
+		<deptos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:type="java:java.lang.String">FINANZAS</deptos>
+		<deptos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:type="java:java.lang.String">MARKETING</deptos>
+		<deptos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:type="java:java.lang.String">PUBLICIDAD</deptos>
+		<deptos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:type="java:java.lang.String">INFORMATICA</deptos>
+		<deptos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:type="java:java.lang.String">COMUNICACIONES</deptos>
+		<deptos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:type="java:java.lang.String">DIRECCIÓN</deptos>
+		<deptos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:type="java:java.lang.String">RECURSOS HUMANOS</deptos>
+		<deptos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:type="java:java.lang.String">LIMPIEZA</deptos>
+		<deptos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:type="java:java.lang.String">GESTORÍA</deptos>
+		<company-name>CUSTOMER COMPANY</company-name>
+	</company>
+	<name>John</name>
+</customer-info>

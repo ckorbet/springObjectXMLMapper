@@ -1,0 +1,109 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>es.steria</groupId>
+	<artifactId>springObjectXMLMapper</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>springObjectXMLMapper</name>
+	<description>Spring Object to XML Mapper</description>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<source.version>1.7</source.version>
+		<target.version>1.7</target.version>
+		<surefire.version>2.12.2</surefire.version>
+		<spring.version>3.2.3.RELEASE</spring.version>
+		<castor.version>1.2</castor.version>
+		<xerces.version>2.11.0</xerces.version>
+		<logback.version>1.0.13</logback.version>
+		<groovy.version>2.1.9</groovy.version>
+		<jsr250.version>1.0</jsr250.version>
+	</properties>
+
+	<build>
+		<finalName>springObjectXMLMapper</finalName>
+		<plugins>
+			<!-- Surefire plugin to skip JUnit tests -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<skipTests>true</skipTests>
+					<source>${source.version}</source>
+					<target>${target.version}</target>
+				</configuration>
+				<version>${surefire.version}</version>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<!--
+        ########## SPRING CORE ##########
+		-->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<!--
+        ########## SPRING Object/XML mapping ##########
+		-->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-oxm</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.castor</groupId>
+			<artifactId>castor</artifactId>
+			<version>${castor.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>xerces</groupId>
+			<artifactId>xercesImpl</artifactId>
+			<version>${xerces.version}</version>
+		</dependency>
+
+		<!--
+        ########## LogBack ##########
+		-->
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-core</artifactId>
+			<version>${logback.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>${logback.version}</version>
+		</dependency>
+
+		<!--
+        ########## Groovy ##########
+		-->
+		<dependency>
+			<groupId>org.codehaus.groovy</groupId>
+			<artifactId>groovy-all</artifactId>
+			<version>${groovy.version}</version>
+		</dependency>
+
+		<!--
+        ########## Java Annotations ##########
+		-->
+		<dependency>
+			<groupId>javax.annotation</groupId>
+			<artifactId>jsr250-api</artifactId>
+			<version>${jsr250.version}</version>
+		</dependency>
+	</dependencies>
+
+</project>
